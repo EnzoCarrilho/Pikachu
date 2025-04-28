@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #F5CF06;
+    --secondary-color: #8E4106;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    padding-left: 70px;
+    gap: 20px;
+}
+header span{
+    font-family: "Righteous", sans-serif;
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 629px;
+    padding-right: 750px;
+    color: var(--secondary-color);
+}
+h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 64px;
+}
+p{
+    font-family: "Righteous", sans-serif;
+    font-size: 20px;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100px;
+    width: 411px;
+    background-color: var(--secondary-color);
+    margin-top: 683px;
+    margin-left: 859px;
+}
+button img{
+    width: 24px;
+    height: 32px;
+}
+button span{
+    font-family: "Righteous", sans-serif;
+    font-size: 60px;
+    color: #fff;
+}
+.background-text{
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    top: 188px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .5;
+}
+.background-text2{
+    position: absolute;
+    top: 363px;
+    width: 80%;
+    max-height: 100%;
+}
+.pikachu-image{
+    position: absolute;
+    top: 292px;
+    max-height: 100%;
+}
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer span{
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px){
+    header{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+
+    .background-text{
+        top: 130px;
+    }
+}
