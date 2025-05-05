@@ -38,14 +38,55 @@ main{
     align-items: center;
     justify-content: center;
 }
-.main-text{
+
+.main-images{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.background-text{
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .5;
+}
+.background-text2{
+    position: relative;
+    width: 80%;
+    max-height: 100%;
+    margin: auto;
+    top: -25%;
+    left: 0;
+    right: 0;
+
+}
+.pikachu-image{
     position: absolute;
-    margin-top: 629px;
-    padding-right: 750px;
+    display: flex;
+    max-height: 100%;
+    margin: auto;
+    top: 30%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    padding-left: 70px;
+    padding-right: 70px;
+    z-index: 1;
     color: var(--secondary-color);
 }
+
 h2{
     font-family: "Righteous", sans-serif;
     font-size: 64px;
@@ -59,11 +100,10 @@ button{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    height: 100px;
-    width: 411px;
+    height: 80px;
+    width: 400px;
     background-color: var(--secondary-color);
-    margin-top: 683px;
-    margin-left: 859px;
+   
 }
 button img{
     width: 24px;
@@ -71,31 +111,10 @@ button img{
 }
 button span{
     font-family: "Righteous", sans-serif;
-    font-size: 60px;
+    font-size: 2rem;
     color: #fff;
 }
-.background-text{
-    position: absolute;
-    width: 100%;
-    max-height: 100%;
-    margin: auto;
-    top: 188px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    opacity: .5;
-}
-.background-text2{
-    position: absolute;
-    top: 363px;
-    width: 80%;
-    max-height: 100%;
-}
-.pikachu-image{
-    position: absolute;
-    top: 292px;
-    max-height: 100%;
-}
+
 footer{
     height: 100px;
     display: flex;
@@ -112,7 +131,11 @@ footer span{
         padding-left: 30px;
     }
 
+    .main-images{
+        
+    }
+
     .background-text{
-        top: 130px;
+        
     }
 }
